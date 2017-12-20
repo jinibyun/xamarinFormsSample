@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="AnimationDemo.ColorAnimationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Color Animations"
+    Icon="xaml.png">
+    <StackLayout Margin="10,20,10,20">
+        <BoxView
+            x:Name="boxView"
+            HeightRequest="100"
+            HorizontalOptions="FillAndExpand"
+            Color="Blue" />
+        <Button
+            Clicked="OnAnimateBoxViewButtonClicked"
+            HorizontalOptions="Center"
+            Text="Animate BoxView"
+            VerticalOptions="CenterAndExpand" />
+        <Label
+            x:Name="label"
+            FontAttributes="Bold"
+            FontSize="24"
+            HorizontalOptions="Center"
+            Text="Lorem ipsum dolor sit amet"
+            VerticalOptions="CenterAndExpand" />
+        <Button
+            Clicked="OnAnimateLabelButtonClicked"
+            HorizontalOptions="Center"
+            Text="Animate Label"
+            VerticalOptions="CenterAndExpand" />
+        <Button
+            Clicked="OnAnimatePageBackgroundButtonClicked"
+            HorizontalOptions="Center"
+            Text="Animate Page Background"
+            VerticalOptions="CenterAndExpand" />
+        <Button
+            x:Name="cancelButton"
+            Clicked="OnCancelAnimationButtonClicked"
+            IsEnabled="false"
+            Text="Cancel Animation" />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="AnimationDemo.SimpleAnimationPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Simple Animation"
+    Icon="xaml.png">
+    <StackLayout Margin="0,20,0,0">
+        <Image
+            x:Name="image"
+            Source="monkey.png"
+            VerticalOptions="CenterAndExpand" />
+        <Button
+            x:Name="startButton"
+            Clicked="OnStartAnimationButtonClicked"
+            Text="Start Animation"
+            VerticalOptions="Center" />
+        <Button
+            x:Name="cancelButton"
+            Clicked="OnCancelAnimationButtonClicked"
+            IsEnabled="false"
+            Text="Cancel Animation" />
+    </StackLayout>
+</ContentPage>
