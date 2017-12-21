@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="Styles.DeviceStylesPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Device"
+    Icon="xaml.png">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style
+                x:Key="myBodyStyle"
+                BaseResourceKey="BodyStyle"
+                TargetType="Label">
+                <Setter Property="TextColor" Value="Accent" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="0,20,0,0">
+            <Label Style="{DynamicResource TitleStyle}" Text="Title style" />
+            <Label Style="{DynamicResource SubtitleStyle}" Text="Subtitle style" />
+            <Label Style="{DynamicResource BodyStyle}" Text="Body style" />
+            <Label Style="{DynamicResource CaptionStyle}" Text="Caption style" />
+            <Label Style="{DynamicResource ListItemDetailTextStyle}" Text="List item detail text style" />
+            <Label Style="{DynamicResource ListItemTextStyle}" Text="List item text style" />
+            <Label Text="No style" />
+            <Label Style="{StaticResource myBodyStyle}" Text="My body style" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
