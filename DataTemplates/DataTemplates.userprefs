@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{8B54FC56-A70D-4223-927A-198EDCC7E27D}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataTemplates\XAML\PersonCell.xaml">
+    <Files>
+      <File FileName="DataTemplates\XAML\HomePage.xaml" Line="9" Column="28" />
+      <File FileName="DataTemplates\XAML\PersonCell.xaml" Line="12" Column="48" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DataTemplates" expanded="True">
+            <Node name="DataTemplates" expanded="True">
+              <Node name="XAML" expanded="True" />
+            </Node>
+            <Node name="DataTemplates.Droid" expanded="True">
+              <Node name="References" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="DataTemplates" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.DataTemplates.Droid PreferredExecutionTarget="Android.Nexus 4 (Lollipop)" />
+</Properties>
