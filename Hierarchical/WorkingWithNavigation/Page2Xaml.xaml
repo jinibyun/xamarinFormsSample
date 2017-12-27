@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="WorkingWithNavigation.Page2Xaml"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Page 2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                x:Name="nextButton"
+                Clicked="OnNextPageButtonClicked"
+                Text="Next Page"
+                VerticalOptions="CenterAndExpand" />
+            <Button
+                x:Name="previousButton"
+                Clicked="OnPreviousPageButtonClicked"
+                Text="Previous Page"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
