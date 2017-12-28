@@ -1,0 +1,36 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="LayoutCompression\Views\LayoutCompressionPage.xaml">
+    <Files>
+      <File FileName="LayoutCompression\Models\User.cs" Line="7" Column="9" />
+      <File FileName="LayoutCompression\App.xaml" Line="4" Column="3" />
+      <File FileName="LayoutCompression\App.xaml.cs" Line="12" Column="49" />
+      <File FileName="LayoutCompression\Views\LayoutCompressionPage.xaml" Line="14" Column="35" />
+      <File FileName="LayoutCompression\Views\LayoutCompressionPage.xaml.cs" Line="14" Column="1" />
+      <File FileName="Droid\Properties\AndroidManifest.xml" Line="7" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LayoutCompression" expanded="True">
+            <Node name="LayoutCompression" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="LayoutCompressionPage.xaml" selected="True" />
+              </Node>
+            </Node>
+            <Node name="LayoutCompression.Droid" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="LayoutCompression.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
