@@ -1,0 +1,1 @@
+https://university.xamarin.com/resources/how-to-install-google-play-on-android-emulator
