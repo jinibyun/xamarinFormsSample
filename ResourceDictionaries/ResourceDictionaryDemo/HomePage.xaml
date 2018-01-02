@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="ResourceDictionaryDemo.HomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Home Page"
+    BackgroundColor="{StaticResource PageBackgroundColor}">
+    <StackLayout Margin="0,20,0,0">
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style x:Key="LabelNormalStyle" TargetType="Label">
+                    <Setter Property="TextColor" Value="{StaticResource NormalTextColor}" />
+                </Style>
+                <Style x:Key="MediumBoldText" TargetType="Button">
+                    <Setter Property="FontSize" Value="Medium" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <Label Style="{StaticResource LabelPageHeadingStyle}" Text="ResourceDictionary Demo" />
+        <Label
+            Margin="10,20,10,0"
+            Style="{StaticResource LabelNormalStyle}"
+            Text="This app demonstrates consuming resources that have been defined in resource dictionaries." />
+        <Button
+            Margin="0,20,0,0"
+            Clicked="OnNavigateButtonClicked"
+            HorizontalOptions="Center"
+            Style="{StaticResource MediumBoldText}"
+            Text="Navigate"
+            TextColor="{StaticResource NormalTextColor}" />
+    </StackLayout>
+</ContentPage>
