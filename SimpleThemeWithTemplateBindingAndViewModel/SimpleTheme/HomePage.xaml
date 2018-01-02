@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="SimpleTheme.HomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SimpleTheme;assembly=SimpleTheme"
+    FooterText="{Binding FooterText}"
+    HeaderText="{Binding HeaderText}">
+    <ContentPage.BindingContext>
+        <local:HomePageViewModel />
+    </ContentPage.BindingContext>
+    <ContentView
+        x:Name="contentView"
+        Padding="0,20,0,0"
+        ControlTemplate="{StaticResource TealTemplate}">
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label HorizontalOptions="Center" Text="Welcome to the app!" />
+            <Button Clicked="OnButtonClicked" Text="Change Theme" />
+        </StackLayout>
+    </ContentView>
+</ContentPage>
