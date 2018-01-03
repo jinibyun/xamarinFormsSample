@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="PassingData.SecondPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Second Page">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Name:" />
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="{Binding Name}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Age:" />
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="{Binding Age}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Occupation:" />
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="{Binding Occupation}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label
+                    FontSize="Medium"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Country:" />
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="{Binding Country}" />
+            </StackLayout>
+            <Button
+                x:Name="navigateButton"
+                Clicked="OnNavigateButtonClicked"
+                Text="Previous Page" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

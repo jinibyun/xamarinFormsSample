@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="PassingData.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Main Page">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Label FontSize="Medium" Text="Date: " />
+                <Label x:Name="dateLabel" FontSize="Medium" />
+            </StackLayout>
+            <Button
+                x:Name="navigateButton"
+                Clicked="OnNavigateButtonClicked"
+                HorizontalOptions="Center"
+                Text="Next Page" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
