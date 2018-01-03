@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="TextSample.LabelPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Label Demo - XAML">
+    <ContentPage.Content>
+        <StackLayout x:Name="layout" Padding="5,10">
+            <Label Text="This is a green label." TextColor="#77d065" />
+            <Label Text="This is a default, non-customized label." />
+            <Label FontSize="30" Text="This label has a font size of 30." />
+            <Label FontAttributes="Bold" Text="This is bold text." />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span
+                            FontAttributes="Bold"
+                            ForegroundColor="Red"
+                            Text="Red Bold" />
+                        <Span Text="Default" />
+                        <Span
+                            FontAttributes="Italic"
+                            FontSize="Small"
+                            Text="italic small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

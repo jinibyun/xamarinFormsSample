@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="TextSample.LoginPageXaml"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Login Page - XAML">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0">
+            <Label
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Traditional Login Form" />
+            <Frame>
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Username"
+                        VerticalOptions="Center" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Password"
+                        VerticalOptions="Center" />
+                    <Entry Grid.Row="0" Grid.Column="1" />
+                    <Entry
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        IsPassword="true" />
+                    <Button
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        BackgroundColor="Gray"
+                        Text="Log In"
+                        TextColor="White" />
+                </Grid>
+            </Frame>
+            <Label
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Modern Login Form" />
+            <Frame>
+                <StackLayout>
+                    <Entry HorizontalOptions="Fill" Placeholder="Username" />
+                    <Entry
+                        HorizontalOptions="Fill"
+                        IsPassword="true"
+                        Placeholder="Password" />
+                    <Button
+                        BackgroundColor="Gray"
+                        HorizontalOptions="Fill"
+                        Text="Log In"
+                        TextColor="White" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
